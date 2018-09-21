@@ -18,9 +18,9 @@ function postComment() {
 
   let templateFn = _.template(commentTemplate);
 
-  let commentsDiv = document.getElementById("comments");
-
-  let templateHTML = templateFn({ 'comment': comment, 'commenter': commenter })
-
-  commentsDiv.innerHTML += templateHTML;
+  // let commentsDiv = document.getElementById("comments");
+  // 
+  // let templateHTML = templateFn({ 'comment': comment, 'commenter': commenter })
+  // 
+  // commentsDiv.innerHTML += templateHTML;
 }

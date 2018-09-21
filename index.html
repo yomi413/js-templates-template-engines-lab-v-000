@@ -29,9 +29,19 @@
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
     <script id="comments-template" type="text/x-lodash-template">
-      <form onsubmit="postComment()">
+      <form onsubmit="postComment(); return false">
         <div id="comments">
-          <div class="comment-body">
+          <div class="comment"><%= comment %></div>
+          <div class="commenter">
+            <p>
+              <span class="posted-by">Posted By: </span>
+              <% if (commenter !== '') { %>
+              <%= commenter %>
+              <% } else { %>
+              Anonymous
+              <% } %>
+            </p>
+          </div>
           // Name: <input type="text" id="commenterName"><br></br>
           // Comment: <input type"textarea" id="commentText">
 

@@ -5,19 +5,12 @@
   </head>
   <body>
     <main>
-
       <form id="post-form" onsubmit="createPost();return false;">
         Title: <input type="text" id="title"><br></br>
         Body: <input type="textarea" id="blog"><br></br>
         Author: <input type="text" id="author"><br></br>
         <input type="submit">
       </form>
-
-      <!-- <form onsubmit="postComment(); return false;">
-        Name: <input type="text" id="commenterName"><br></br>
-        Comment: <input type"textarea" id="commentText">
-      </form> -->
-
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
@@ -61,7 +54,7 @@
 
     <script id="post-template" type="text/x-lodash-template">
       <article>
-        <header>Title: <%= title %></header>
+        <header><h3>Title: <%= title %></h3></header>
 
         <footer>Author: <% author %></footer>
       </article>

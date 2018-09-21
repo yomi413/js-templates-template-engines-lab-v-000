@@ -13,6 +13,11 @@
         <input type="submit">
       </form>
 
+      <form onsubmit="postComment(); return false;">
+        Name: <input type="text" id="commenterName"><br></br>
+        Comment: <input type"textarea" id="commentText">
+      </form>
+
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
@@ -25,7 +30,11 @@
     <script src="test/index-test.js"></script>
     <script id="comments-template" type="text/x-lodash-template">
       <form onsubmit="postComment()">
-        <div id="comments"></div>
+        <div id="comments">
+          <div class="comment-body"><%
+
+        </div>
+        
       </form>
     </script>
 

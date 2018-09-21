@@ -3,7 +3,7 @@ function createPost() {
   let blog = document.getElementById("blog").value;
   let author = document.getElementById("author").value;
 
-  let newPostTemplate = document.getElementById("page-template").innerHTML;
+  let pageTemplate = document.getElementById("page-template").innerHTML;
 
   // let templateFn = _.template(newPostTemplate);
   //

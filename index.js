@@ -17,10 +17,10 @@ function postComment() {
   let commentTemplate = document.getElementById("comments-template").innerHTML;
 
   // let templateFn = _.template(commentTemplate);
-  // 
+  //
   // let commentsDiv = document.getElementById("comments");
-  // 
+  //
   // let templateHTML = templateFn({ 'comment': comment, 'commenter': commenter })
-  // 
+  //
   // commentsDiv.innerHTML += templateHTML;
 }

@@ -8,13 +8,6 @@ function createPost() {
 
   let pageTemplateFn = _.template(pageTemplate)
   let postTemplateFn = _.template(postTemplate)
-  // let templateFn = _.template(newPostTemplate);
-  //
-  // let postsDiv = document.getElementById("post");
-  //
-  // let templateHTML = templateFn({ 'title': title, 'blog': blog, 'author': author });
-  //
-  // postsDiv.innerHTML += templateHTML;
 }
 
 function postComment() {

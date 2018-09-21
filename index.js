@@ -9,6 +9,7 @@ function createPost() {
 
   let pageTemplateFn = _.template(pageTemplate)
   let postTemplateFn = _.template(postTemplate)
+  let commentsTemplateFn = _.template(commentsTemplate)
 }
 
 function postComment() {

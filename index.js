@@ -5,6 +5,9 @@ function createPost() {
 
   let pageTemplate = document.getElementById("page-template").innerHTML;
   let postTemplate = document.getElementById("post-template").innerHTML;
+
+  let pageTemplateFn = _.template(pageTemplate)
+  let postTemplateFn = _.template(postTemplate)
   // let templateFn = _.template(newPostTemplate);
   //
   // let postsDiv = document.getElementById("post");
